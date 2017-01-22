@@ -10,13 +10,22 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.andreasantoro.helloworld.MainActivity">
 
+    <!-- Commented by Ignacio.
     <TextView
         android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/greetings" />
+        android:text="@string/greetings" /> -->
+    <EditText android:id="@+id/search_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_search_category"
+        />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_send" />
+        android:text="@string/button_search"
+        android:onClick="searchCategory"/>
+
 </LinearLayout>
